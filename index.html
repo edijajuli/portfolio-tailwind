@@ -3,8 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Edi Jajuli's Portfolio Website</title>
+    <link rel="icon" type="image/jpg" href="./img/edi.jpg" />
     <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta
+      name="description"
+      content="Portfolio website to make it easier for other people to find about me on search engines"
+    />
+    <meta
+    <meta name="author" content="Edi Jajuli" />
+    <link rel="shortcut icon" type="image/ico" href="./favicon.ico" />
     <script>
       if (
         localStorage.theme === "dark" ||
@@ -106,7 +115,7 @@
     <section id="home" class="pt-36 dark:bg-dark">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="w-full self-center px-4 lg:w-1/2 md:text-xl lg:text-2xl">
+          <div class="w-full self-center px-4 lg:w-1/2 md:text-xl lg:text-2xl" data-aos="fade-right"  data-aos-duration="1000">
             <h1 class="text-base font-semibold text-primary">
               Hallo Everyone👋, I'am
               <span
@@ -135,7 +144,7 @@
               >Contact Me</a
             >
           </div>
-          <div class="w-full self-end px-4 lg:w-1/2">
+          <div class="w-full self-end px-4 lg:w-1/2" data-aos="fade-left"  data-aos-duration="1000">
             <div class="relative mt-10 lg:mt-0 lg:right-0">
               <img
                 src="./img/edi.png"
@@ -166,7 +175,8 @@
     <!-- About section start -->
     <section id="about" class="pt-28 pb-32 dark:bg-dark">
       <div class="container">
-        <div class="flex flex-wrap">
+        <div class="flex flex-wrap" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"  data-aos-duration="1000">
           <div class="w-full px-4 mb-10 lg:w-1/2">
             <h4
               class="font-bold uppercase text-primary text-2xl mb-3 lg:text-3xl"
@@ -182,7 +192,8 @@
               developement and web developement
             </p>
           </div>
-          <div class="w-full px-4 lg:w-1/2">
+          <div class="w-full px-4 lg:w-1/2" data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
             <h3
               class="font-semibold uppercase text-dark text-2xl mb-3 lg:text-4xl dark:text-white"
             >
@@ -302,7 +313,7 @@
     <!-- Portfolio section strat -->
     <section id="portfolio" class="pt-36 pb-16 bg-slate-100 dark:bg-slate-800">
       <div class="container">
-        <div class="w-full px-4">
+        <div class="w-full px-4" data-aos="fade-down" data-aos-duration="1000">
           <div class="max-w-xl mx-auto text-center mb-16">
             <h4 class="font-semibold text-lg text-primary mb-2">Portfolio</h4>
             <h2
@@ -317,9 +328,9 @@
           </div>
         </div>
         <div
-          class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
+          class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto" 
         >
-          <div class="mb-12 p-4 md:w-1/2">
+          <div class="mb-12 p-4 md:w-1/2" data-aos="zoom-in" data-aos-duration="1000">
             <div class="rounded-md shadow-md overflow-hidden">
               <img
                 src="./img/portfolio1.jpg"
@@ -338,7 +349,7 @@
               other people of our projects.
             </p>
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
+          <div class="mb-12 p-4 md:w-1/2" data-aos="zoom-in" data-aos-duration="1000">
             <div class="rounded-md shadow-md overflow-hidden">
               <img
                 src="./img/portfolio2.jpg"
@@ -357,7 +368,7 @@
               a single page application
             </p>
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
+          <div class="mb-12 p-4 md:w-1/2" data-aos="zoom-in" data-aos-duration="1000">
             <div class="rounded-md shadow-md overflow-hidden">
               <img
                 src="./img/portfolio3.jpg"
@@ -376,7 +387,7 @@
               free API provided by the pixabay api service.
             </p>
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
+          <div class="mb-12 p-4 md:w-1/2" data-aos="zoom-in" data-aos-duration="1000">
             <div class="rounded-md shadow-md overflow-hidden">
               <img
                 src="./img/portfolio4.jpg"
@@ -404,7 +415,7 @@
     <!-- Contact section start -->
     <section id="contact" class="pt-36 pb-32 dark:bg-slate-900">
       <div class="container">
-        <div class="w-full px-4">
+        <div class="w-full px-4"data-aos="fade-up" data-aos-duration="1000">
           <div class="max-w-xl mx-auto text-center mb-16">
             <h4 class="font-semibold text-lg text-primary mb-2">Contact</h4>
             <h2
@@ -419,7 +430,7 @@
             </p>
           </div>
         </div>
-        <form action="">
+        <form action="" data-aos="fade-up" data-aos-duration="1000">
           <div class="w-full lg:w-2/3 lg:mx-auto">
             <div class="w-full px-4 mb-8">
               <label for="name" class="text-base text-primary font-bold"
@@ -633,5 +644,9 @@
     ></a>
     <!-- Backt to top end -->
     <script src="./src/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
